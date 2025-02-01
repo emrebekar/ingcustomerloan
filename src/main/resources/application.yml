@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: customerloan
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+    defer-datasource-initialization: true
+    #properties:
+      #jakarta:
+        #persistence:
+          #schema-generation:
+            #scripts:
+              #action: create
+              #create-target: src/main/resources/schema.sql
+              #create-source: metadata
+  sql:
+    init.mode: always
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+jwt:
+  secret: ZGR1eUxlTmRRZW9MN1FNcXF0SHBWbFhRcWZnUzFoY05hWXlFOW9wVThIdGMvNEs3T2U1Zkg2VkdzOUVMZEErMwo=
+  expirationTime: 864000000
