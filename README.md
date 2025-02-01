@@ -144,7 +144,7 @@ Swagger
 
 http://localhost:8080/swagger-ui/index.html
 
-Get token from /authenticate with admin or customer user and password. Then copy click Authorize button on the Swagger page and past the generated token to bearer area to use outher entpoins.
+Get token from /authenticate with admin or customer user and password. Then copy click Authorize button on the Swagger page and paste the generated token to bearer area to use other endpoints.
 
 ## License
 
