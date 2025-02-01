@@ -56,6 +56,8 @@ mvn spring-boot:run
 
 #### `POST /authenticate`
 
+Generate token and send via "Authorization" header parameter. Set the value with "Bearer <generated_token>". Otherwise, the application cannot be used.
+
 **Request Body:**
 
 ```json
@@ -75,7 +77,7 @@ mvn spring-boot:run
 
 ### Loan Management
 
-#### `POST /api/loans/create` (Admin Only)
+#### `POST /api/loans/create` (Admin & Customer)
 
 **Request Body:**
 
@@ -137,6 +139,12 @@ Run unit tests with:
 ```sh
 mvn test
 ```
+
+Swagger
+
+http://localhost:8080/swagger-ui/index.html
+
+Get token from /authenticate with admin or customer user and password. Then copy click Authorize button on the Swagger page and past the generated token to bearer area to use outher entpoins.
 
 ## License
 
